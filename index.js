@@ -6,11 +6,9 @@ module.exports = function(fn) {
   return function() {
     if(args) {
       var cb = sliced(arguments).pop()
-      cb.call(cb, args)
+      return cb.call(cb, args)
     }
-    if(calling) {
-      callbacks.push(sliced(arguments).pop())
-    }
+    callbacks.push(sliced(arguments).pop())
     if(calling) return;
     calling = true
     fn(function() {

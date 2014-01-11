@@ -9,6 +9,19 @@ var getCount = dogpile(function(cb) {
   }, 100)
 })
 
+it('fires once', function(done) {
+  var action = function(cb) {
+    setTimeout(function() {
+      cb(null, true)
+    }, 100)
+  }
+  dogpile(action)(function(err, bool) {
+    assert.ifError(err)
+    assert.strictEqual(bool, true)
+    done()
+  })
+})
+
 it('works', function(done) {
   var max = 10
   var test = function(loops) {
