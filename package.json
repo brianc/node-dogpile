@@ -1,0 +1,27 @@
+{
+  "name": "dogpile",
+  "version": "0.0.0",
+  "description": "Dogpile cache an async function be called at once max",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianc/node-dogpile"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Brian M. Carlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianc/node-dogpile/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0"
+  },
+  "dependencies": {
+    "sliced": "0.0.5"
+  }
+}
