@@ -1,6 +1,6 @@
 {
   "name": "dogpile",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Dogpile cache an async function be called at once max",
   "main": "index.js",
   "scripts": {
